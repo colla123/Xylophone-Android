@@ -17,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
     private final int PRIORITY = 0;
     private final float NORMAL_PLAY_RATE = 1.0f;
 
-    // TODO: Add member variables here
-    private SoundPool mSoundPool;
+    // TODO: Add member variables here that will hold our sound IDs
+    private SoundPool mSoundPool; //create a new soundpool variable
     private int mCSoundId;
     private int mDSoundId;
     private int mESoundId;
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // TODO: Create a new SoundPool
+        // TODO: Create a new SoundPool object by using constructor
         mSoundPool = new SoundPool(NR_OF_SIMULTANEOUS_SOUNDS, AudioManager.STREAM_MUSIC, 0);
 
 
